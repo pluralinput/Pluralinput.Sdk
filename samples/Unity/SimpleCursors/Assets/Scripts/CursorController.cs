@@ -4,7 +4,6 @@ using Pluralinput.Sdk;
 
 public class CursorController : MonoBehaviour
 {
-
     public Mouse mouse;
     private Vector3 lastMouseMotion;
 
@@ -26,10 +25,5 @@ public class CursorController : MonoBehaviour
     void Update()
     {
 
-    }
-
-    void FixedUpdate()
-    {
-        
     }
 }

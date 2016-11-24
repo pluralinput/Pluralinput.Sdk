@@ -2,13 +2,15 @@
 using System.Collections;
 using Pluralinput.Sdk;
 
-public class Startup : MonoBehaviour {
+public class Startup : MonoBehaviour
+{
 
     public static InputManager InputManager;
     public GameObject cursorPrefab;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
 #if !UNITY_EDITOR
         InputManager = new InputManager();
 
@@ -22,7 +24,8 @@ public class Startup : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
-	
-	}
+    void Update()
+    {
+
+    }
 }
