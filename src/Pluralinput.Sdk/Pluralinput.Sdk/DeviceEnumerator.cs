@@ -18,16 +18,22 @@ namespace Pluralinput.Sdk
 
         private IRawInputSource RawInputSource { get; set; }
 
-        public IEnumerable<Mouse> EnumerateMice()
+        public IEnumerable<Mouse> Mice
         {
-            var mice = GetRawInputDevices(RIM_TYPEMOUSE);
-            return mice.Select(ridl => new Mouse(ridl.hDevice, RawInputSource));
+            get
+            {
+                var mice = GetRawInputDevices(RIM_TYPEMOUSE);
+                return mice.Select(ridl => new Mouse(ridl.hDevice, RawInputSource));
+            }
         }
 
-        public IEnumerable<Keyboard> EnumerateKeyboards()
+        public IEnumerable<Keyboard> Keyboards
         {
-            var keyboards = GetRawInputDevices(RIM_TYPEKEYBOARD);
-            return keyboards.Select(ridl => new Keyboard(ridl.hDevice, RawInputSource));
+            get
+            {
+                var keyboards = GetRawInputDevices(RIM_TYPEKEYBOARD);
+                return keyboards.Select(ridl => new Keyboard(ridl.hDevice, RawInputSource));
+            }
         }
 
         private IEnumerable<RAWINPUTDEVICELIST> GetRawInputDevices(uint type)

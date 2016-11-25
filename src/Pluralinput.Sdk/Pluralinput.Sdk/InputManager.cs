@@ -16,7 +16,7 @@ namespace Pluralinput.Sdk
             Initialize();
         }
 
-        public IDeviceEnumerator DeviceEnumerator { get; private set; }
+        public IDeviceEnumerator Devices { get; private set; }
         protected WindowCreator WindowCreator { get; set; }
         protected RawInputParser RawInputParser { get; set; }
 
@@ -25,7 +25,7 @@ namespace Pluralinput.Sdk
             RawInputParser = new RawInputParser();
             WindowCreator = new WindowCreator(RawInputParser);
 
-            DeviceEnumerator = new DeviceEnumerator(RawInputParser);
+            Devices = new DeviceEnumerator(RawInputParser);
 
             var windowHandle = WindowCreator.CreateWindow();
             RegisterInputDevices(windowHandle);
