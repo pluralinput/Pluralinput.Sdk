@@ -1,10 +1,8 @@
 ﻿using UnityEngine;
-using System.Collections;
 using Pluralinput.Sdk;
 
 public class Startup : MonoBehaviour
 {
-
     public static InputManager InputManager;
     public GameObject cursorPrefab;
 
