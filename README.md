@@ -1,4 +1,4 @@
-# Pluralinput.Sdk
+# Pluralinput.Sdk [![Build status](https://ci.appveyor.com/api/projects/status/sncj8u6naeob4wbt?svg=true)](https://ci.appveyor.com/project/chgl/pluralinput-sdk)
 This is complete rewrite of the previous, non-open Pluralinput SDK.
 ## Code samples
 
