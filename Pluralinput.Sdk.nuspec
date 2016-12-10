@@ -20,9 +20,9 @@
     <tags>Mouse Keyboard Input Multi-User</tags>
   </metadata>
   <files>
-    <file src="Pluralinput.Sdk\bin\net35\Pluralinput.Sdk.dll" target="lib\net35"/>
-    <file src="Pluralinput.Sdk\bin\net40\Pluralinput.Sdk.dll" target="lib\net40"/>
-    <file src="Pluralinput.Sdk\bin\net45\Pluralinput.Sdk.dll" target="lib\net45"/>
-    <file src="Pluralinput.Sdk\bin\net46\Pluralinput.Sdk.dll" target="lib\net46"/>
+    <file src="src\Pluralinput.Sdk\Pluralinput.Sdk\bin\net35\Pluralinput.Sdk.dll" target="lib\net35"/>
+    <file src="src\Pluralinput.Sdk\Pluralinput.Sdk\bin\net40\Pluralinput.Sdk.dll" target="lib\net40"/>
+    <file src="src\Pluralinput.Sdk\Pluralinput.Sdk\bin\net45\Pluralinput.Sdk.dll" target="lib\net45"/>
+    <file src="src\Pluralinput.Sdk\Pluralinput.Sdk\bin\net46\Pluralinput.Sdk.dll" target="lib\net46"/>
   </files>
 </package>
