@@ -1,5 +1,14 @@
 # Pluralinput.Sdk [![Build status](https://ci.appveyor.com/api/projects/status/sncj8u6naeob4wbt?svg=true)](https://ci.appveyor.com/project/chgl/pluralinput-sdk)
 This is complete rewrite of the previous, non-open Pluralinput SDK.
+
+## Installation
+[![NuGet](https://img.shields.io/nuget/v/Pluralinput.Sdk.svg?style=flat-square)]()
+
+```
+PM> Install-Package Pluralinput.Sdk
+```
+or install via [VS Package Management window](https://docs.nuget.org/ndocs/tools/package-manager-ui).
+
 ## Code samples
 
 ### Basic usage
@@ -19,6 +28,7 @@ mice.First().ButtonUp += (o, e) =>
     Console.WriteLine($"{o}: ButtonUp {e.Button}");
 };
 ```
+Make sure to check out the [samples](/samples)-folder for more.
 
 ## TODO
 - [x] add package to nuget.org
