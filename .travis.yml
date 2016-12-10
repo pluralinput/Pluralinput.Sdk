@@ -1,2 +1,10 @@
 language: csharp
 solution: src/Pluralinput.Sdk/Pluralinput.Sdk.sln
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  script:
+    - cd src/Pluralinput.Sdk && nuget pack Pluralinput.Sdk.nuspec -Version $VERSION && nuget push *.nupkg $NUGET_API_KEY -verbosity detailed
+  on:
+    branch: master
