@@ -1,4 +1,4 @@
-# Pluralinput.Sdk [![Build status](https://ci.appveyor.com/api/projects/status/4r7rjw82tn2oc5mf/branch/master?svg=true)](https://ci.appveyor.com/project/chgl/pluralinput-sdk/branch/master)
+# Pluralinput.Sdk
 This is complete rewrite of the previous, non-open Pluralinput SDK.
 ## Code samples
 
@@ -21,7 +21,7 @@ mice.First().ButtonUp += (o, e) =>
 ```
 
 ## TODO
-- [ ] add package to nuget.org
+- [x] add package to nuget.org
 - [x] check x64/x86 compatibility issues
 - [ ] check .NET Core compatibility
 - [x] add Unity sample project
