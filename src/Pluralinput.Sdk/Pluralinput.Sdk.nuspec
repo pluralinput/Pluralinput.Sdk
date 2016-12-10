@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Pluralinput.Sdk</id>
+    <title>Pluralinput.Sdk</title>
+    <version>$version$</version>
+    <authors>Christian Gulden</authors>
+    <owners>Christian Gulden</owners>
+    <licenseUrl>https://raw.githubusercontent.com/pluralinput/Pluralinput.Sdk/master/LICENSE</licenseUrl>
+    <projectUrl>http://sdk.pluralinput.com/</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/pluralinput/Pluralinput.Sdk/master/PluralinputSdkIcon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Develop .NET applications that can distinguish between multiple mouse and keyboard devices on the same PC.
+
+      This is a pre-release version subject to constant, breaking changes.
+    </description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright (c) 2016 Christian Gulden</copyright>
+    <tags>Mouse Keyboard Input Multi-User</tags>
+  </metadata>
+  <files>
+    <file src="Pluralinput.Sdk\bin\net35\Pluralinput.Sdk.dll" target="lib\net35"/>
+    <file src="Pluralinput.Sdk\bin\net40\Pluralinput.Sdk.dll" target="lib\net40"/>
+    <file src="Pluralinput.Sdk\bin\net45\Pluralinput.Sdk.dll" target="lib\net45"/>
+    <file src="Pluralinput.Sdk\bin\net46\Pluralinput.Sdk.dll" target="lib\net46"/>
+  </files>
+</package>
