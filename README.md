@@ -2,6 +2,7 @@
 This is complete rewrite of the previous, non-open Pluralinput SDK.
 
 ## Installation
+[![NuGet](https://img.shields.io/nuget/v/Pluralinput.Sdk.svg?style=flat-square)]()
 
 ```
 PM> Install-Package Pluralinput.Sdk
