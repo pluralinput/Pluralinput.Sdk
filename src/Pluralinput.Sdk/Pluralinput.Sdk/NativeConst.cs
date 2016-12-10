@@ -32,12 +32,12 @@ namespace Pluralinput.Sdk
         internal const uint MOUSE_ATTRIBUTES_CHANGED = 0x04;
         internal const uint MOUSE_MOVE_NOCOLASCE = 0x08;
 
-        internal const uint RI_MOUSE_LEFT_BUTTON_DOWN = 0x0001;
-        internal const uint RI_MOUSE_LEFT_BUTTON_UP = 0x0002;
-        internal const uint RI_MOUSE_RIGHT_BUTTON_DOWN = 0x0004;
-        internal const uint RI_MOUSE_RIGHT_BUTTON_UP = 0x0008;
-        internal const uint RI_MOUSE_MIDDLE_BUTTON_DOWN = 0x0010;
-        internal const uint RI_MOUSE_MIDDLE_BUTTON_UP = 0x0020;
+        internal const ushort RI_MOUSE_LEFT_BUTTON_DOWN = 0x0001;
+        internal const ushort RI_MOUSE_LEFT_BUTTON_UP = 0x0002;
+        internal const ushort RI_MOUSE_RIGHT_BUTTON_DOWN = 0x0004;
+        internal const ushort RI_MOUSE_RIGHT_BUTTON_UP = 0x0008;
+        internal const ushort RI_MOUSE_MIDDLE_BUTTON_DOWN = 0x0010;
+        internal const ushort RI_MOUSE_MIDDLE_BUTTON_UP = 0x0020;
 
         internal const uint RI_MOUSE_BUTTON_1_DOWN = RI_MOUSE_LEFT_BUTTON_DOWN;
         internal const uint RI_MOUSE_BUTTON_1_UP = RI_MOUSE_LEFT_BUTTON_UP;

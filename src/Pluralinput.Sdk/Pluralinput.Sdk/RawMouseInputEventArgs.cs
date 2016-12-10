@@ -14,7 +14,10 @@ namespace Pluralinput.Sdk
             Data = data;
         }
 
-        public RAWINPUTHEADER Header { get; private set; }
-        public RAWMOUSE Data { get; private set; }
+        public RawMouseInputEventArgs()
+        { }
+
+        public RAWINPUTHEADER Header { get; set; }
+        public RAWMOUSE Data { get; set; }
     }
 }
