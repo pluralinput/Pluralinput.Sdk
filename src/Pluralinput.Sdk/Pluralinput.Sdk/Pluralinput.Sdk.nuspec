@@ -20,6 +20,6 @@
     <tags>Mouse Keyboard Input Multi-User</tags>
   </metadata>
   <files>
-    <file src=".\bin\net35\Pluralinput.Sdk.dll"/>
+    <file src=".\bin\Release\Pluralinput.Sdk.dll"/>
   </files>
 </package>
