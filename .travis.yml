@@ -5,6 +5,6 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-    - cd src/Pluralinput.Sdk && nuget pack Pluralinput.Sdk.nuspec -Version $VERSION && nuget push *.nupkg $NUGET_API_KEY -verbosity detailed
+    - cd src/Pluralinput.Sdk && nuget pack Pluralinput.Sdk.nuspec -Version 0.$TRAVIS_BUILD_NUMBER && nuget push *.nupkg $NUGET_API_KEY -verbosity detailed
   on:
     branch: master
