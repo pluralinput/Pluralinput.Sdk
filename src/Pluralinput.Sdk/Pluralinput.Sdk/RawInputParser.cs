@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
 using static Pluralinput.Sdk.NativeStructs;
 using static Pluralinput.Sdk.NativeMethods;
 using static Pluralinput.Sdk.NativeConst;
-using static Pluralinput.Sdk.NativeFlags;
 
 namespace Pluralinput.Sdk
 {

@@ -11,9 +11,11 @@ namespace Pluralinput.Sdk
 {
     public class DeviceEnumerator : IDeviceEnumerator
     {
-        public DeviceEnumerator(IRawInputSource rawInputSource)
+        public DeviceEnumerator(IRawInputSource rawInputSource, IntPtr windowHandle)
         {
             RawInputSource = rawInputSource;
+
+            RegisterInputDevices(windowHandle);
         }
 
         private IRawInputSource RawInputSource { get; set; }
@@ -33,6 +35,35 @@ namespace Pluralinput.Sdk
             {
                 var keyboards = GetRawInputDevices(RIM_TYPEKEYBOARD);
                 return keyboards.Select(ridl => new Keyboard(ridl.hDevice, RawInputSource));
+            }
+        }
+
+        //TODO: ideally, this is also done in IRawInputSource.
+        protected void RegisterInputDevices(IntPtr targetWindowHandle)
+        {
+            var flags = RIDEV_INPUTSINK;
+
+            var devices = new RAWINPUTDEVICE[]
+            {
+                new RAWINPUTDEVICE()
+                {
+                     usUsagePage = 0x01,
+                     usUsage = 0x02,
+                     dwFlags = flags,
+                     hwndTarget = targetWindowHandle
+                },
+                new RAWINPUTDEVICE()
+                {
+                     usUsagePage = 0x01,
+                     usUsage = 0x06,
+                     dwFlags = flags,
+                     hwndTarget = targetWindowHandle
+                }
+            };
+
+            if (!RegisterRawInputDevices(devices, devices.Length, Marshal.SizeOf(typeof(RAWINPUTDEVICE))))
+            {
+                throw new Win32Exception();
             }
         }
 
