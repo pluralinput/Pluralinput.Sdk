@@ -1,6 +1,8 @@
-﻿namespace Pluralinput.Sdk
+﻿using System;
+
+namespace Pluralinput.Sdk
 {
-    public class InputManager
+    public class InputManager : IDisposable
     {
         public InputManager()
         {
@@ -18,6 +20,11 @@
             var windowHandle = WindowCreator.CreateWindow();
 
             Devices = new DeviceEnumerator(RawInputParser, windowHandle);
-        }        
+        }
+
+        public void Dispose()
+        {
+            WindowCreator?.Dispose();
+        }
     }
 }
