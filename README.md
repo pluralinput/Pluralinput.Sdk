@@ -36,5 +36,5 @@ Make sure to check out the [samples](/samples)-folder for more.
 - [ ] check .NET Core compatibility
 - [x] add Unity sample project
 - [ ] add WinForms sample project
-- [ ] add WPF sample project
+- [x] add WPF sample project
 - [ ] add UWP sample project
