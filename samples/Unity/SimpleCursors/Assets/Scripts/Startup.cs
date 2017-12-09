@@ -12,7 +12,7 @@ public class Startup : MonoBehaviour
 #if !UNITY_EDITOR
         InputManager = new InputManager();
 
-        foreach (var mouse in InputManager.DeviceEnumerator.EnumerateMice())
+        foreach (var mouse in InputManager.Devices.Mice)
         {
             print(mouse.DeviceName);
             var cursor = Instantiate(cursorPrefab);
