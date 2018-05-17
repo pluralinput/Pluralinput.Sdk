@@ -101,7 +101,7 @@ namespace Pluralinput.Sdk
                 UpdateWindow(hwnd);
 
                 MSG msg;
-                while (GetMessage(out msg, IntPtr.Zero, 0, 0) != 0)
+                while (!isDisposed && GetMessage(out msg, IntPtr.Zero, 0, 0) != 0)
                 {
                     TranslateMessage(ref msg);
                     DispatchMessage(ref msg);
@@ -140,6 +140,7 @@ namespace Pluralinput.Sdk
                     DestroyWindow(windowHandle);
                     windowHandle = IntPtr.Zero;
                 }
+                isDisposed = true;
             }
         }
     }
